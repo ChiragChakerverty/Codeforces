@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t; cin>>t;
+    while(t--)
+    {
+        long long int n; cin>>n;
+        
+        for(int k=2;k<30;k++)
+        {   
+            long long int count=pow(2,k)-1;
+            long long int x=n/count;
+            if(n%count==0)
+            {
+                cout<<x<<endl;
+                break;
+            }
+        }
+    }
+    return 0;
+}
